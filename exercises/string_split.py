@@ -48,5 +48,5 @@ def extract_name_and_domain(email):
     # 请在下方编写代码
     # 使用split()方法分割电子邮件地址，返回用户名和域名的元组
     username = email.split("@")[0]
-    domain = email.split("@")[1].split(".")[0]
+    domain = email.split("@")[1]
     return (username, domain)
