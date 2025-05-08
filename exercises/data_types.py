@@ -22,4 +22,8 @@ def get_data_types():
     # 3. 创建一个字符串变量，值为 "Python编程"
     # 4. 创建一个布尔值变量，值为 True
     # 5. 将这些变量作为元组返回
-    pass 
+    int1 = 42
+    float1 = 3.14
+    str1 = "Python编程"
+    bool1 = True
+    return (int1, float1, str1, bool1)

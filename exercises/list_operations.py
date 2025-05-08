@@ -20,4 +20,19 @@ def student_list_operations(students, operation, *args):
     - 操作后的学生列表
     """
     # 请在下方编写代码
-    pass 
+    if operation == "add":  
+        students.append(args[0]) 
+    elif operation == "remove":  
+        if args[0] in students:  
+            students.remove(args[0])  
+        else:
+            print("学生不存在，无法删除")  
+    elif operation == "update": 
+        if args[0] in students:  
+            index = students.index(args[0]) 
+            students[index] = args[1] 
+        else:
+            print("学生不存在，无法更新")  
+    else:
+        print("无效的操作类型")  
+    return students 
