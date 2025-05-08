@@ -70,7 +70,7 @@ def post_data(url, data):
         return {
             'status_code': response.status_code,  # HTTP状态码
             'response_json': response_json,  # 响应的JSON数据
-            'success': response.status_code   # 请求是否成功
+            'success': 200 <= response.status_code < 300  # 请求是否成功
         }
     except requests.RequestException as e:
         print(f"请求失败: {e}")
